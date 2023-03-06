@@ -1,6 +1,6 @@
 # flutter_galery_photo_v2
  
-|<img src="/preview/preview1.png" width="300"/>|
+|<img src="/preview/perview1.png" width="300"/>|
 |--|
 
 ---
