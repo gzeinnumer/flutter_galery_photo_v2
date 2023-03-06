@@ -31,8 +31,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   List<DynamicPhoto> res = [
-    DynamicPhoto("/data/user/0/com.example.flutter_galery_photo_v2/cache/c585bcd6-a64e-498c-ba6e-8894d13d1a6a2048387513829356888.jpg", "base64"),
-    DynamicPhoto("/data/user/0/com.example.flutter_galery_photo_v2/cache/24f43a52-3903-4c9f-9fb6-cff01dbae8731152124621162338820.jpg", "base64"),
+    // DynamicPhoto("/data/user/0/com.example.flutter_galery_photo_v2/cache/c585bcd6-a64e-498c-ba6e-8894d13d1a6a2048387513829356888.jpg", "base64"),
+    // DynamicPhoto("/data/user/0/com.example.flutter_galery_photo_v2/cache/24f43a52-3903-4c9f-9fb6-cff01dbae8731152124621162338820.jpg", "base64"),
   ];
 
   @override
@@ -55,11 +55,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 }
               },
               centerWidget: true,
-              // max: 3,
-              max: this.res.length,
+              max: 3,
+              // max: this.res.length,
               askBeforeDelete: true,
               showDebug: true,
-              displayOnly: true,
               resLastData: res,
             ),
           ],
