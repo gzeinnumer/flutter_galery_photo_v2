@@ -116,7 +116,8 @@ class _DynamicPhotoWidgetState extends State<DynamicPhotoWidget> {
       if (value == null) return;
       setState(() {
         String base64 = "${widget.formatBase64}${base64Encode(File(value).readAsBytesSync())}";
-        path.insert(0, DynamicPhoto(value, base64));
+        // path.insert(0, DynamicPhoto(value, base64));
+        path.add(DynamicPhoto(value, base64));
         List<DynamicPhoto> res = List.from(path);
         res.removeLast();
         widget.res(res);
